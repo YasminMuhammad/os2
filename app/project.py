@@ -1,4 +1,4 @@
-import random
+
 class Team :
     def __init__(self , name , sec , department ):
         self.name = name
@@ -32,11 +32,4 @@ def members ():
 
 print("")
 members()
-print("")
-print("Our program takes the length of the password and generates a random password of the same length ")
 
-password_len = int(input("Enter the length of password : "))
-All_words="abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
-password = "".join(random.sample(All_words,password_len ))
-print("")
-print("Generated password is :  " ,password)
